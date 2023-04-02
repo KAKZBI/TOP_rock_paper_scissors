@@ -7,9 +7,13 @@
   html{
     box-sizing:border-box;
   }
-  *,::before, ::after{
-    box-sizing:inherit;
-  }
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
   body{
     font-family:robotronica, lato, sans-serif;
     width:100vw;
@@ -34,8 +38,8 @@ header{
     margin:0;
 }
 #game{
-    margin: 3rem auto 0 auto;
-    height: 80vh;
+    /* margin: 3rem auto 0 auto; */
+    height: 60vh;
 }
 i{
 
@@ -55,14 +59,14 @@ i{
   section{
    display: flex;
    justify-content: space-around;
-   padding: 2rem;
+   /* padding: 2rem; */
    text-align: center;
   }
   /* section div{
     border: .4rem solid rgb(0, 0, 0);
   } */
   .outcome{
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
     height: 8vh;
     /* border:1px solid black; */
